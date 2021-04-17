@@ -51,7 +51,7 @@ export default {
         'faCalendarAlt',
         'faBook',
         'faUsers',
-        'faDollarSign',
+        'faImages',
       ],
     },
   },

@@ -10,7 +10,7 @@
           Casa Patron
         </h1>
         <h3
-          class="text-center antialiased text-3xl font-normal tracking-normal header-subtext-shadow font-serif"
+          class="header__sub text-center antialiased text-3xl font-normal tracking-normal font-serif"
         >
           Explore New Mexico's Enchantments
         </h3>
@@ -39,13 +39,10 @@ export default {
   font-family: 'Lobster', cursive;
 }
 
-.header-text-shadow {
-  text-shadow: 0px 0px 3px rgba(242, 217, 128, 1);
-  font-family: 'Lobster', cursive;
-}
-
-.header-subtext-shadow {
-  text-shadow: 0px 0px 2px rgba(242, 217, 128, 1);
+.header__sub {
+  font-size: 2.5rem;
+  color: rgba(242, 217, 128, 1);
+  text-shadow: 0px 0px 8px black;
   font-family: 'Lobster', cursive;
 }
 </style>
