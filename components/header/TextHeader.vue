@@ -3,7 +3,7 @@
     class="relative h-full flex w-auto justify-center content-center flex-col"
   >
     <div class="py-8 px-4 bg-opacity-25">
-      <div class="relative z-10 flex justify-center content-center flex-col">
+      <div class="flex justify-center content-center flex-col">
         <h1
           class="header__background text-center antialiased text-6xl font-black font-serif leading-none mb-2"
         >
@@ -15,7 +15,7 @@
           Explore New Mexico's Enchantments
         </h3>
       </div>
-      <div class="relative z-10 flex justify-center pt-5">
+      <div class="flex justify-center pt-5">
         <Button text="Learn More" link="about" />
       </div>
     </div>

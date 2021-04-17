@@ -10,7 +10,7 @@
       <div id="about" class="w-full overflow-hidden"><About /></div>
       <div id="features" class="w-full overflow-hidden"><Features /></div>
       <div id="events" class="w-full overflow-hidden"><EventsList /></div>
-      <div id="pricing" class="w-full overflow-hidden"><Pricing /></div>
+      <div id="gallery" class="w-full overflow-hidden"><Gallery /></div>
       <div id="testimonials" class="w-full overflow-hidden">
         <Testimonial />
       </div>
@@ -21,26 +21,24 @@
 </template>
 
 <script>
-// import NavBar from '@/components/navigation/NavBar.vue'
 import Header from '@/components/header/Header.vue'
 import About from '@/components/about/About.vue'
 import Features from '@/components/features/Features.vue'
 import EventsList from '@/components/events/EventsList.vue'
-import Pricing from '@/components/pricing/Pricing.vue'
 import Testimonial from '@/components/testimonial/Testimonial.vue'
 import Booking from '@/components/booking/Booking.vue'
 import Footer from '@/components/footer/Footer.vue'
 import SideDrawer from '@/components/navigation/SideDrawer.vue'
+import Gallery from '@/components/gallery/Gallery.vue'
 
 export default {
   name: 'Home',
   components: {
-    // NavBar,
+    Gallery,
     Header,
     About,
     Features,
     EventsList,
-    Pricing,
     Testimonial,
     Booking,
     Footer,
