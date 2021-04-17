@@ -13,7 +13,7 @@
       </div>
       <div
         class="w-full bg-cover h-64 md:h-auto md:min-h-full md:w-1/3 order-1 rounded-b-lg rounded-t-none md:rounded-r-lg md:rounded-l-none flex-grow"
-        style="background-image: url('https://unsplash.it/804/800')"
+        :style="{ backgroundImage: 'url(' + image + ')' }"
       ></div>
     </div>
   </div>
@@ -29,6 +29,7 @@ export default {
   },
   data() {
     return {
+      image: require('@/assets/images/master-bedroom-1.jpg'),
       features: [
         {
           title: 'Accessibility',

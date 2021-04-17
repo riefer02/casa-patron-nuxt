@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>{{ feature.title }}</h3>
+    <h3 class="text-3xl">{{ feature.title }}</h3>
     <ParagraphText :text="feature.description" />
   </div>
 </template>

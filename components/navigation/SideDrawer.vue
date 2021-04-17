@@ -77,7 +77,7 @@ export default {
 
 <style scoped>
 nav {
-  z-index: 4;
+  z-index: 10;
 }
 
 .nav-yellow-bg {
