@@ -3,7 +3,7 @@
     <div
       class="flex flex-col md:flex-row bg-white text-black rounded-lg shadow-lg"
     >
-      <div class="w-full md:w-2/3 md:order-2 p-10 xl:p-16">
+      <div class="w-full lg:w-2/3 lg:order-2 p-6 xl:p-16">
         <div class="">
           <SectionHeaderText text="Welcome to Casa Patron" />
         </div>

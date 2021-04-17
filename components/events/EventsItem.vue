@@ -7,12 +7,15 @@
       :style="{ backgroundImage: 'url(' + item.image + ')' }"
     ></div>
     <div
-      class="px-6 py-4 bg-white text-black shadow-inner shadow-lg overflow-hidden flex-grow xl:p-12"
+      class="px-6 py-4 bg-white text-black shadow-lg overflow-hidden flex-grow xl:p-12 flex flex-col justify-between"
     >
-      <h2 class="mb-2 xl:text-2xl font-light">{{ item.title }}</h2>
-      <ParagraphText :text="item.description" />
-      <p class="mb-4 text-grey-dark text-sm"></p>
-      <Button text="Learn More" />
+      <div>
+        <h2 class="mb-2 xl:text-2xl font-light">{{ item.title }}</h2>
+        <ParagraphText :text="item.description" />
+      </div>
+      <div class="flex justify-center">
+        <Button text="Learn More" />
+      </div>
     </div>
   </div>
 </template>

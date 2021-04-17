@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <nav
-      class="shadow-inner shadow-lg flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full transition-colors duration-400 ease-in"
+      class="shadow-lg flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full transition-colors duration-400 ease-in"
       :class="[
         { 'bg-white': scrollPosition >= 539 },
         { 'nav-yellow-bg': scrollPosition <= 540 || scrollPosition === 0 },
@@ -77,7 +77,7 @@ export default {
 
 <style scoped>
 nav {
-  z-index: 2;
+  z-index: 4;
 }
 
 .nav-yellow-bg {
