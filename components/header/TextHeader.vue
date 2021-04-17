@@ -5,7 +5,7 @@
     <div class="py-8 px-4 bg-opacity-25">
       <div class="flex justify-center content-center flex-col">
         <h1
-          class="header__background text-center antialiased text-6xl font-black font-serif leading-none mb-2"
+          class="header__background text-center antialiased text-4xl md:text-6xl font-black font-serif leading-none mb-2"
         >
           Casa Patron
         </h1>
@@ -44,5 +44,15 @@ export default {
   color: rgba(242, 217, 128, 1);
   text-shadow: 0px 0px 8px black;
   font-family: 'Lobster', cursive;
+}
+
+@media screen and (max-width: 640px) {
+  .header__background {
+    font-size: 4.5rem;
+  }
+
+  .header__sub {
+    font-size: 2rem;
+  }
 }
 </style>

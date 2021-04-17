@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h3 class="text-3xl">{{ feature.title }}</h3>
+    <h3 class="text-center md:text-left underline text-2xl md:text-3xl">
+      {{ feature.title }}
+    </h3>
     <ParagraphText :text="feature.description" />
   </div>
 </template>

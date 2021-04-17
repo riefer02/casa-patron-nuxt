@@ -112,4 +112,24 @@ export default {
     min-width: 300px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six {
+    min-height: 400px;
+    min-width: 300px;
+    background-size: 210%;
+  }
+}
 </style>
