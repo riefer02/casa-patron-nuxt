@@ -20,7 +20,7 @@ export default {
         { text: 'Features', link: '#features', icon: 'list-ul' },
         { text: 'Events', link: '#events', icon: 'calendar-alt' },
         { text: 'Gallery', link: '#gallery', icon: 'images' },
-        { text: 'Testimonials', link: '#testimonials', icon: 'users' },
+        // { text: 'Testimonials', link: '#testimonials', icon: 'users' },
         { text: 'Booking', link: '#booking', icon: 'book' },
       ],
     }
