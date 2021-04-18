@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h3 class="text-center md:text-left underline text-2xl md:text-3xl">
+  <div class="my-4 md:my-0">
+    <h3
+      class="text-center md:text-left underline text-2xl md:text-3xl my-2 md:my-0"
+    >
       {{ feature.title }}
     </h3>
     <ParagraphText :text="feature.description" />

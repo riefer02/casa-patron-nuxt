@@ -130,6 +130,7 @@ export default {
     min-height: 400px;
     min-width: 300px;
     background-size: 210%;
+    background-position: center;
   }
 }
 </style>

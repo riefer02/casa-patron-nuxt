@@ -34,25 +34,25 @@ export default {
 <style scoped>
 .header__background {
   font-size: 5.5rem;
-  color: rgba(242, 217, 128, 1);
-  text-shadow: 0px 0px 8px black;
+  color: rgb(255, 228, 119);
+  text-shadow: 1px 1px 4px black;
   font-family: 'Lobster', cursive;
 }
 
 .header__sub {
-  font-size: 2.5rem;
-  color: rgba(242, 217, 128, 1);
-  text-shadow: 0px 0px 8px black;
-  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  color: rgb(255, 228, 119);
+  text-shadow: 1px 1px 2px black;
+  font-family: 'Montserrat', cursive;
 }
 
 @media screen and (max-width: 640px) {
   .header__background {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .header__sub {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 </style>

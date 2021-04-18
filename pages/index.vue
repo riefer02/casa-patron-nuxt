@@ -16,9 +16,7 @@
         <div id="features" class="w-full overflow-hidden"><Features /></div>
         <div id="events" class="w-full overflow-hidden"><EventsList /></div>
         <div id="gallery" class="w-full overflow-hidden"><Gallery /></div>
-        <div id="testimonials" class="w-full overflow-hidden">
-          <Testimonial />
-        </div>
+
         <div id="booking" class="w-full overflow-hidden"><Booking /></div>
       </div>
       <div class="w-full overflow-hidden"><Footer /></div>
@@ -32,7 +30,6 @@ import Header from '@/components/header/Header.vue'
 import About from '@/components/about/About.vue'
 import Features from '@/components/features/Features.vue'
 import EventsList from '@/components/events/EventsList.vue'
-import Testimonial from '@/components/testimonial/Testimonial.vue'
 import Booking from '@/components/booking/Booking.vue'
 import Footer from '@/components/footer/Footer.vue'
 import SideDrawer from '@/components/navigation/SideDrawer.vue'
@@ -47,7 +44,7 @@ export default {
     About,
     Features,
     EventsList,
-    Testimonial,
+
     Booking,
     Footer,
     SideDrawer,
@@ -83,12 +80,12 @@ p {
 }
 
 .linear-gradient {
-  background: rgb(242, 217, 128);
+  background: rgb(255, 228, 119);
   background: linear-gradient(
     90deg,
-    rgba(242, 217, 128, 1) 0%,
-    rgba(254, 250, 212, 1) 50%,
-    rgba(242, 217, 128, 1) 100%
+    rgb(255, 225, 107) 0%,
+    rgb(255, 228, 119),
+    rgb(255, 225, 107) 100%
   );
 }
 </style>

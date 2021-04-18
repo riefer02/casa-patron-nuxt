@@ -172,27 +172,27 @@
         class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-t"
       >
         <div class="sm:w-full px-4 md:w-1/6">
-          <strong>FWR</strong>
+          <strong>ANR</strong>
         </div>
         <div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
           <h6 class="font-bold mb-2">Address</h6>
           <address class="not-italic mb-4 text-sm">
             123 6th St.<br />
-            Melbourne, FL 32904
+            Alto, NM 32904
           </address>
         </div>
         <div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
-          <h6 class="font-bold mb-2">Free Resources</h6>
+          <h6 class="font-bold mb-2">Easter Egg</h6>
           <p class="mb-4 text-sm">
-            Use our HTML blocks for <strong>FREE</strong>.<br />
-            <em>All are MIT License</em>
+            Click this link to hear rock music!<br />
+            <em>Copyright Rief Productions LLC</em>
           </p>
         </div>
         <div class="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
           <button
-            class="px-4 py-2 bg-purple-800 hover:bg-purple-900 rounded text-white"
+            class="w-auto uppercase text-sm font-bold tracking-wide bg-indigo-500 hover:border hover:border-indigo-600 border-solid hover:bg-red-500 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline hover:shadow-lg shadow-md"
           >
-            Get Started
+            Book Now!
           </button>
         </div>
       </div>
@@ -204,4 +204,8 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.footer-1 {
+  font-family: 'Montserrat', sans-serif;
+}
+</style>

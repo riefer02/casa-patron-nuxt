@@ -4,18 +4,18 @@
       class="flex flex-col md:flex-row bg-white text-black rounded-lg shadow-lg"
     >
       <div class="w-full lg:w-2/3 lg:order-2 p-6 xl:p-16">
-        <div class="">
+        <div class="my-8 md: md:my-0">
           <SectionHeaderText text="Welcome to Casa Patron" />
         </div>
         <div class="">
           <ParagraphText :text="placeholderText" />
         </div>
-        <div class="flex justify-center px-2 py-2">
+        <div class="flex justify-center px-2 py-2 my-8 md: md:my-0">
           <Button text="Learn More" link="features" />
         </div>
       </div>
       <div
-        class="w-full bg-cover h-64 md:h-auto md:min-h-full md:w-1/3 order-1 rounded-b-lg rounded-t-none md:rounded-l-lg md:rounded-r-none flex-grow"
+        class="about__image w-full bg-cover h-64 md:h-auto md:min-h-full md:w-1/3 order-1 rounded-b-lg rounded-t-none md:rounded-l-lg md:rounded-r-none flex-grow"
         :style="{ backgroundImage: 'url(' + image + ')' }"
       ></div>
     </div>
@@ -42,4 +42,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+@media screen and (max-width: 480px) {
+  .about__image {
+    min-height: 400px;
+    min-width: 300px;
+    background-size: 120%;
+    background-position: center;
+  }
+}
+</style>

@@ -81,35 +81,41 @@ nav {
 }
 
 .nav-yellow-bg {
-  background: rgb(242, 217, 128);
+  background: rgb(255, 228, 119);
   background: linear-gradient(
     90deg,
-    rgba(242, 217, 128, 1) 0%,
-    rgba(254, 250, 212, 1) 50%,
-    rgba(242, 217, 128, 1) 100%
+    rgb(255, 225, 107) 0%,
+    rgb(255, 228, 119),
+    rgb(255, 225, 107) 100%
   );
 }
 
 .backdrop-container {
-  background: rgb(242, 217, 128);
+  background: #ffcd02;
   background: linear-gradient(
     90deg,
-    rgba(242, 217, 128, 0.5) 0%,
-    rgba(254, 250, 212, 0.5) 50%,
-    rgba(242, 217, 128, 0.5) 100%
+    rgba(242, 217, 128, 0.2) 0%,
+    #ffcd0246,
+    rgba(242, 217, 128, 0.2) 100%
   );
   z-index: 2;
   animation: fadeIn 0.6s cubic-bezier(0.1, 0.95, 0.77, 1.01);
 }
 
 .sidenav-container {
-  z-index: 3;
-  background-color: rgba(102, 126, 234, 1);
+  z-index: 12;
+  background: rgb(102, 145, 234);
+  background: linear-gradient(
+    336deg,
+    rgba(102, 145, 234, 1) 0%,
+    rgba(102, 126, 234, 1) 100%
+  );
   transition: 0.3s;
 }
 
 .sidenav-container .closebtn {
-  color: rgb(242, 217, 128);
+  color: #ffcd02;
+  text-shadow: 1px 1px 2px black;
 }
 
 .open-drawer {

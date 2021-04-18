@@ -27,7 +27,8 @@ export default {
 <style scoped>
 a {
   font-family: 'Lobster', cursive;
-  color: rgb(242, 217, 128);
+  color: #ffcd02;
+  text-shadow: 1px 1px 2px black;
   transition: all 0.3s;
 }
 </style>
