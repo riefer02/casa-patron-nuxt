@@ -1,9 +1,12 @@
 <template>
-  <div class="flex justify-start items-center">
-    <font-awesome-icon :icon="['fa', link.icon]" class="mr-3 text-3xl fa-fw" />
+  <div class="flex justify-start items-center xl:text-4xl">
+    <font-awesome-icon
+      :icon="['fa', link.icon]"
+      class="mr-3 text-3xl xl:text-4xl fa-fw text-blue-400"
+    />
     <a
       :id="link.text + '-link'"
-      class="block text-3xl mx-0 my-2 no-underline hover:text-white"
+      class="block text-3xl xl:text-5xl mx-0 my-2 no-underline hover:text-white"
       :href="link.link"
       @click="$emit('toggle-nav')"
       >{{ link.text }}</a
@@ -26,9 +29,9 @@ export default {
 
 <style scoped>
 a {
+  @apply text-white;
   font-family: 'Lobster', cursive;
-  color: #ffcd02;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px #000;
   transition: all 0.3s;
 }
 </style>

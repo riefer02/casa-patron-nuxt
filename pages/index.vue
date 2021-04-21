@@ -1,10 +1,7 @@
 <template>
   <div>
     <Loader v-if="loading" />
-    <div
-      v-else
-      class="flex flex-wrap overflow-hidden bg-yellow-300 linear-gradient"
-    >
+    <div v-else class="flex flex-wrap overflow-hidden linear-gradient">
       <div class="w-full overflow-hidden">
         <SideDrawer />
       </div>
@@ -75,17 +72,10 @@ h6 {
   font-family: 'Lobster', cursive;
 }
 
-p {
+p,
+ul,
+li,
+a {
   font-family: 'Montserrat', sans-serif;
-}
-
-.linear-gradient {
-  background: rgb(255, 228, 119);
-  background: linear-gradient(
-    90deg,
-    rgb(255, 225, 107) 0%,
-    rgb(255, 228, 119),
-    rgb(255, 225, 107) 100%
-  );
 }
 </style>

@@ -17,6 +17,20 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  @apply bg-blue-400;
+}
+
+/* .linear-gradient {
+  background: rgb(255, 228, 119);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 225, 107) 0%,
+    rgb(255, 228, 119),
+    rgb(255, 225, 107) 100%
+  );
+} */
+
 *,
 *::before,
 *::after {

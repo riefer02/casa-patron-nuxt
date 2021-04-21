@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative h-full flex w-auto justify-center content-center flex-col"
+    class="text-white relative h-full flex w-auto justify-center content-center flex-col"
   >
     <div class="py-8 px-4 bg-opacity-25">
       <div class="flex justify-center content-center flex-col">
@@ -34,7 +34,6 @@ export default {
 <style scoped>
 .header__background {
   font-size: 5.5rem;
-  color: rgb(255, 228, 119);
   text-shadow: 1px 1px 4px black;
   font-family: 'Lobster', cursive;
 }

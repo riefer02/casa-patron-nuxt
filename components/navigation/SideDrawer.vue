@@ -1,28 +1,28 @@
 <template>
   <div class="">
+    <!--NavBar-->
     <nav
-      class="shadow-lg flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full transition-colors duration-400 ease-in"
+      class="nav shadow-lg flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full"
       :class="[
-        { 'bg-white': scrollPosition >= 539 },
         { 'nav-yellow-bg': scrollPosition <= 540 || scrollPosition === 0 },
       ]"
     >
-      <span
-        class="mobile-nav-open-icon cursor-pointer text-3xl lg:text-3xl mr-8 ml-12 p-2 text-black"
-        @click="toggleNav()"
-        >&#9776;</span
-      >
+      <div @click="toggleNav()" id="nav-icon1" :class="{ open: isOpen }">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <SunIcon class="ml-8 mr-12" />
     </nav>
 
-    <!-- this would work as the backdrop when navbar is open-->
+    <!-- Sidedrawer Overlay -->
     <div
       id="backdrop"
       class="backdrop-container hidden h-full overflow-auto fixed top-0 left-0 w-full"
       :class="[{ 'open-backdrop': isOpen }, { 'close-backdrop': !isOpen }]"
     ></div>
 
-    <!--the would be the drawer and it's content-->
+    <!-- Sidedrawer Content-->
     <div
       id="mySidenav"
       class="sidenav-container transition-all bg-white flex flex-col items-center h-full overflow-x-hidden pt-2 fixed top-0 left-0 w-0 shadow-inner shadow-lg"
@@ -78,16 +78,91 @@ export default {
 <style scoped>
 nav {
   z-index: 10;
+  min-height: 85px;
+  background-color: white;
+}
+
+.nav {
+  transition: all 0.2s ease;
 }
 
 .nav-yellow-bg {
-  background: rgb(255, 228, 119);
   background: linear-gradient(
     90deg,
     rgb(255, 225, 107) 0%,
     rgb(255, 228, 119),
     rgb(255, 225, 107) 100%
   );
+  background: rgb(255, 228, 119);
+}
+#nav-icon1 {
+  width: 60px;
+  height: 25px;
+  position: relative;
+  bottom: 10px;
+  left: 2rem;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 20;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 18px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 36px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .backdrop-container {
@@ -103,18 +178,13 @@ nav {
 }
 
 .sidenav-container {
-  z-index: 12;
-  background: rgb(102, 145, 234);
-  background: linear-gradient(
-    336deg,
-    rgba(102, 145, 234, 1) 0%,
-    rgba(102, 126, 234, 1) 100%
-  );
+  @apply bg-gray-700;
+  z-index: 9;
   transition: 0.3s;
 }
 
 .sidenav-container .closebtn {
-  color: #ffcd02;
+  @apply text-blue-300;
   text-shadow: 1px 1px 2px black;
 }
 
