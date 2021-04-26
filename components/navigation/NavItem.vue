@@ -8,7 +8,6 @@
       :id="link.text + '-link'"
       class="block text-3xl xl:text-5xl mx-0 my-2 no-underline hover:text-white"
       :href="link.link"
-      @click="$emit('toggle-nav')"
       >{{ link.text }}</a
     >
   </div>

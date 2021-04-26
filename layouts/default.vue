@@ -15,10 +15,27 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   @apply bg-blue-400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lobster', cursive;
+}
+
+p,
+ul,
+li,
+a {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* .linear-gradient {

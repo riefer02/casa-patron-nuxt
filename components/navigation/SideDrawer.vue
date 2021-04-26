@@ -2,17 +2,19 @@
   <div class="">
     <!--NavBar-->
     <nav
-      class="nav shadow-lg flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full"
+      class="nav shadow-lg fixed top-0 left-0 md:h-1/10 w-full flex items-center justify-between"
       :class="[
         { 'nav-yellow-bg': scrollPosition <= 540 || scrollPosition === 0 },
       ]"
     >
-      <div @click="toggleNav()" id="nav-icon1" :class="{ open: isOpen }">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="container mx-auto flex items-center justify-between">
+        <div @click="toggleNav()" id="nav-icon1" :class="{ open: isOpen }">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <SunIcon class="mr-10" />
       </div>
-      <SunIcon class="ml-8 mr-12" />
     </nav>
 
     <!-- Sidedrawer Overlay -->

@@ -1,10 +1,10 @@
 <template>
   <div>
     <video-background
-      :src="require('@/assets/video/Casa-Patron-Splash-1.mp4')"
+      :src="require(`assets/video/${video}`)"
       style="height: 600px"
     >
-      <TextHeader />
+      <TextHeader :header-texts="headerData.headerTexts" />
     </video-background>
   </div>
 </template>
@@ -12,6 +12,12 @@
 <script>
 import TextHeader from '@/components/header/TextHeader.vue'
 export default {
+  props: {
+    headerData: {
+      type: Object,
+      default: () => {},
+    },
+  },
   name: 'VideoHeader',
   components: {
     TextHeader,
@@ -19,6 +25,12 @@ export default {
   data() {
     return {}
   },
+  computed: {
+    video() {
+      return this.headerData.headerVideo
+    },
+  },
+  mounted() {},
 }
 </script>
 

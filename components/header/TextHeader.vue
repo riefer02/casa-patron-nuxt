@@ -7,12 +7,12 @@
         <h1
           class="header__background text-center antialiased text-4xl md:text-6xl font-black font-serif leading-none mb-2"
         >
-          Casa Patron
+          {{ headerTexts.primaryText }}
         </h1>
         <h3
           class="header__sub text-center antialiased text-3xl font-normal tracking-normal font-serif"
         >
-          Explore New Mexico's Enchantments
+          {{ headerTexts.secondaryText }}
         </h3>
       </div>
       <div class="flex justify-center pt-5">
@@ -25,8 +25,17 @@
 <script>
 import Button from '@/components/buttons/Button.vue'
 export default {
+  props: {
+    headerTexts: {
+      type: Object,
+      default: () => {},
+    },
+  },
   components: {
     Button,
+  },
+  mounted() {
+    console.log(this.headerTexts)
   },
 }
 </script>

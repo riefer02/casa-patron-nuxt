@@ -52,6 +52,7 @@ export default {
         'faBook',
         'faUsers',
         'faImages',
+        'faLaptopHouse',
       ],
     },
   },

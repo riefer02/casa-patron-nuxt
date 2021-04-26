@@ -1,14 +1,18 @@
 <template>
   <div>
-    <VideoHeader>
-      <TextHeader />
-    </VideoHeader>
+    <VideoHeader :header-data="headerData"> </VideoHeader>
   </div>
 </template>
 
 <script>
 import VideoHeader from '@/components/header/VideoHeader.vue'
 export default {
+  props: {
+    headerData: {
+      type: Object,
+      default: () => {},
+    },
+  },
   components: {
     VideoHeader,
   },

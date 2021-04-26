@@ -9,8 +9,8 @@
         <Header :header-data="pageData.header" />
       </div>
       <div class="container mx-auto md:px-4 md:py-4">
-        <div id="about" class="w-full overflow-hidden"><About /></div>
         <div id="features" class="w-full overflow-hidden"><Features /></div>
+        <div id="about" class="w-full overflow-hidden"><About /></div>
         <div id="events" class="w-full overflow-hidden"><EventsList /></div>
         <div id="gallery" class="w-full overflow-hidden"><Gallery /></div>
         <div id="booking" class="w-full overflow-hidden"><Booking /></div>
@@ -46,7 +46,7 @@ export default {
   },
   data() {
     return {
-      pageData: this.$store.state.pages.home,
+      pageData: this.$store.state.pages.retreats,
       loading: true,
     }
   },
@@ -54,8 +54,7 @@ export default {
     window.addEventListener('load', () => {
       this.loading = false
     })
+    console.log(this.pageData.header.headerVideo)
   },
 }
 </script>
-
-<style></style>
