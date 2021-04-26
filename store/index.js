@@ -1,5 +1,5 @@
 export const state = () => ({
-  counter: 0,
+  loading: false,
   pages: {
     home: {
       header: {
@@ -29,6 +29,9 @@ export const state = () => ({
 })
 
 export const mutations = {
+  setLoading(state, payload) {
+    state.loading = payload
+  },
   increment(state) {
     state.counter++
   },
