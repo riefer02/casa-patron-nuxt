@@ -34,9 +34,7 @@ export default {
   components: {
     Button,
   },
-  mounted() {
-    console.log(this.headerTexts)
-  },
+  mounted() {},
 }
 </script>
 

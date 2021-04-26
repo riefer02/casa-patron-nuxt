@@ -5,13 +5,13 @@
     >
       <div class="w-full lg:w-2/3 lg:order-2 p-6 xl:p-16">
         <div class="my-8 md: md:my-0">
-          <SectionHeaderText text="Welcome to Casa Patron" />
+          <SectionHeaderText :text="aboutData.header" />
         </div>
         <div class="">
-          <ParagraphText :text="placeholderText" />
+          <ParagraphText :text="aboutData.paragraph" />
         </div>
         <div class="flex justify-center px-2 py-2 my-8 md: md:my-0">
-          <Button text="Learn More" link="features" />
+          <Button :text="aboutData.cta.label" :link="aboutData.cta.linkUrl" />
         </div>
       </div>
       <div
@@ -32,12 +32,23 @@ export default {
     ParagraphText,
     Button,
   },
+  props: {
+    aboutData: {
+      type: Object,
+      default: () => {},
+    },
+  },
   data() {
     return {
-      image: require('@/assets/images/backdoor.jpg'),
+      // image: require('@/assets/images/backdoor.jpg'),
       placeholderText:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     }
+  },
+  computed: {
+    image() {
+      return require(`@/assets/images/${this.aboutData.image}`)
+    },
   },
 }
 </script>
@@ -47,7 +58,7 @@ export default {
   .about__image {
     min-height: 400px;
     min-width: 300px;
-    background-size: 120%;
+    background-size: cover;
     background-position: center;
   }
 }

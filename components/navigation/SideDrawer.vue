@@ -13,7 +13,7 @@
           <span></span>
           <span></span>
         </div>
-        <SunIcon class="mr-10" />
+        <SunIcon class="mr-8" />
       </div>
     </nav>
 

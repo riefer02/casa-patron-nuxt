@@ -7,10 +7,10 @@
         class="block w-full px-3 py-3 md:w-2/3 md:order-1 xl:p-16 my-8 md: md:my-0"
       >
         <div class="block mb-8 sm:mb-0">
-          <SectionHeaderText text="Why Casa Patron?" />
+          <SectionHeaderText :text="featuresData.header" />
         </div>
         <div class="block">
-          <FeaturesList :features="features" />
+          <FeaturesList :features="featuresData.featuresList" />
         </div>
       </div>
       <div
@@ -29,27 +29,16 @@ export default {
     SectionHeaderText,
     FeaturesList,
   },
-  data() {
-    return {
-      image: require('@/assets/images/master-bedroom-1.jpg'),
-      features: [
-        {
-          title: 'Accessibility',
-          description:
-            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        },
-        {
-          title: 'Modular',
-          description:
-            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        },
-        {
-          title: 'Activities',
-          description:
-            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        },
-      ],
-    }
+  props: {
+    featuresData: {
+      type: Object,
+      default: () => {},
+    },
+  },
+  computed: {
+    image() {
+      return require(`@/assets/images/${this.featuresData.image}`)
+    },
   },
 }
 </script>
@@ -59,7 +48,7 @@ export default {
   .feature__image {
     min-height: 400px;
     min-width: 300px;
-    background-size: 120%;
+    background-size: cover;
     background-position: 50% 100%;
   }
 }

@@ -9,8 +9,12 @@
         <Header :header-data="pageData.header" />
       </div>
       <div class="container mx-auto md:px-4 md:py-4">
-        <div id="about" class="w-full overflow-hidden"><About /></div>
-        <div id="features" class="w-full overflow-hidden"><Features /></div>
+        <div id="about" class="w-full overflow-hidden">
+          <About :about-data="pageData.about" />
+        </div>
+        <div id="features" class="w-full overflow-hidden">
+          <Features :features-data="pageData.features" />
+        </div>
         <div id="events" class="w-full overflow-hidden"><EventsList /></div>
         <div id="gallery" class="w-full overflow-hidden"><Gallery /></div>
         <div id="booking" class="w-full overflow-hidden"><Booking /></div>
