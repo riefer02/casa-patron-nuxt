@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import EventsItem from '@/components/events/EventsItem.vue'
+import EventsItem from '@/components/sections/events/EventsItem.vue'
 export default {
   components: {
     EventsItem,

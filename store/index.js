@@ -52,19 +52,21 @@ export const state = () => ({
         image: 'valley-view-1.jpg',
         featuresList: [
           {
-            title: 'Accessibility',
-            description:
-              '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            title: 'Relationships',
+            description: `Exceptional Relationships Built on a Foundation of Servant Leadership: We provide outstanding
+              service and support by being fully engaged with customers, clients, other stakeholders, and team
+              members, listening closely to what is communicated by them to see how best to assist them to
+              achieve their goals.`,
           },
           {
-            title: 'Modular',
-            description:
-              '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            title: 'Sustainability',
+            description: `We build our organization and people with an acknowledgment that what we
+              leave behind will be stronger than today.`,
           },
           {
-            title: 'Activities',
-            description:
-              '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            title: 'Respect',
+            description: `We recognize and value that each of us has unique attributes, skills, and
+            experiences.`,
           },
         ],
       },

@@ -26,10 +26,10 @@
 
 <script>
 import Loader from '@/components/utility/Loader.vue'
-import Header from '@/components/header/Header.vue'
-import About from '@/components/about/About.vue'
-import Features from '@/components/features/Features.vue'
-import Footer from '@/components/footer/Footer.vue'
+import Header from '@/components/sections/header/Header.vue'
+import About from '@/components/sections/about/About.vue'
+import Features from '@/components/sections/features/Features.vue'
+import Footer from '@/components/sections/footer/Footer.vue'
 import SideDrawer from '@/components/navigation/SideDrawer.vue'
 // import EventsList from '@/components/events/EventsList.vue'
 // import Booking from '@/components/booking/Booking.vue'

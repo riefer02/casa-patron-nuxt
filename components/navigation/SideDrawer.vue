@@ -118,7 +118,7 @@ nav {
 #nav-icon1 span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 6px;
   width: 100%;
   background: black;
   border-radius: 9px;
