@@ -1,6 +1,24 @@
 <template>
   <button
-    class="bg w-auto uppercase text-sm font-bold tracking-wide bg-indigo-500 hover:border hover:border-indigo-600 border-solid hover:bg-red-500 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline hover:shadow-lg shadow-md"
+    class="
+      bg
+      w-auto
+      uppercase
+      text-sm
+      font-bold
+      tracking-wide
+      bg-indigo-500
+      hover:border hover:border-indigo-600
+      border-solid
+      hover:bg-red-500
+      text-white
+      p-3
+      rounded-lg
+      focus:outline-none
+      focus:shadow-outline
+      hover:shadow-lg
+      shadow-md
+    "
     style="transition: all 0.15s ease"
     @click="goToLocation"
   >
@@ -22,7 +40,7 @@ export default {
   },
   methods: {
     goToLocation() {
-      location.href = '#' + this.link
+      location.href = this.link
     },
   },
 }

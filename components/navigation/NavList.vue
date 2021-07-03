@@ -19,7 +19,11 @@ export default {
         { text: 'Home', link: '/', icon: 'home' },
         // { text: 'Features', link: '#features', icon: 'list-ul' },
         { text: 'Retreats', link: '/retreats', icon: 'laptop-house' },
-        // { text: 'Events', link: '#events', icon: 'calendar-alt' },
+        {
+          text: 'Rentals',
+          link: '/short-term-rental',
+          icon: 'calendar-alt',
+        },
         // { text: 'Gallery', link: '#gallery', icon: 'images' },
         // { text: 'Testimonials', link: '#testimonials', icon: 'users' },
         // { text: 'Booking', link: '#booking', icon: 'book' },

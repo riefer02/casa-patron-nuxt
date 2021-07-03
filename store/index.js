@@ -1,5 +1,6 @@
 export const state = () => ({
   pages: {
+    // Home Page
     home: {
       header: {
         headerTexts: {
@@ -39,10 +40,11 @@ export const state = () => ({
       events: {},
       gallery: {},
     },
+    // Leadership Retreats
     retreats: {
       header: {
         headerTexts: {
-          primaryText: 'Business Retreats',
+          primaryText: 'Leadership Retreats',
           secondaryText: 'Get away to get clarity.',
         },
         headerVideo: 'Casa-Patron-Splash-1.mp4',
@@ -76,6 +78,15 @@ export const state = () => ({
           'The Mission of Casa Patron is to create a getaway environment that provides the appropriate resources where owners of small businesses and executive directors of nonprofit organizations advance their respective organizations.',
         cta: { label: 'Core Values', linkUrl: '' },
         image: 'stairwell.jpg',
+      },
+    },
+    shortTermRentals: {
+      header: {
+        headerTexts: {
+          primaryText: 'Short Term Rentals',
+          secondaryText: 'Get away to get clarity.',
+        },
+        headerImage: 'niche.jpg',
       },
     },
   },

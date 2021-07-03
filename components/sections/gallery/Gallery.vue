@@ -1,7 +1,14 @@
 <template>
   <div class="my-12 px-4">
     <div
-      class="grid-container bg-white text-black rounded-lg shadow-lg overflow-hidden"
+      class="
+        grid-container
+        bg-white
+        text-black
+        rounded-lg
+        shadow-lg
+        overflow-hidden
+      "
     >
       <div
         class="one"

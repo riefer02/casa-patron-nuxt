@@ -8,14 +8,6 @@
       <div class="w-full overflow-hidden shadow-md">
         <Header :header-data="pageData.header" />
       </div>
-      <div class="container mx-auto md:px-4 md:py-4">
-        <div id="about" class="w-full overflow-hidden">
-          <About :about-data="pageData.about" />
-        </div>
-        <div id="features" class="w-full overflow-hidden">
-          <Features :features-data="pageData.features" />
-        </div>
-      </div>
       <div class="w-full overflow-hidden"><Footer /></div>
     </div>
   </div>
@@ -30,7 +22,7 @@ import Footer from '@/components/sections/footer/Footer.vue'
 import SideDrawer from '@/components/navigation/SideDrawer.vue'
 
 export default {
-  name: 'Home',
+  name: 'ShortTermRental',
   components: {
     Loader,
     Header,
@@ -41,7 +33,7 @@ export default {
   },
   data() {
     return {
-      pageData: this.$store.state.pages.retreats,
+      pageData: this.$store.state.pages.shortTermRentals,
       loading: true,
     }
   },
@@ -51,6 +43,7 @@ export default {
         this.loading = false
       }, 1000)
     })
+    console.log(this.pageData)
   },
 }
 </script>
